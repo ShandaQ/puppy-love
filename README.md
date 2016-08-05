@@ -11,3 +11,4 @@ Frontend Technology: HTML, CSS, JavaScript, Angular
 Backend Technology: Express, Node.JS, PostgreSQL
 
 ![alt text](img/IMG_2201.png "Description goes here")
+![picture](img/IMG_2201.png)
