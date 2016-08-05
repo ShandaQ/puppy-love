@@ -1,0 +1,35 @@
+<div class="container" href="#/login" style="margin-top: -6%;">
+  <!-- <div class="row">
+    <div class="col-xs-12" style="text-align: center; margin-top: 2%;
+    margin-bottom: 5%;">
+      <img class="logo" src="img/logo3.png">
+    </div>
+  </div> -->
+  <div class="row">
+    <div class="col-xs-12">
+      <form style="margin-top: -14%;">
+        <p>{{errorMessage}}</p>
+        <div class="form-group">
+          <label>Uername</label>
+          <input type="text" class="form-control" placeholder="username" ng-model="username">
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Password" ng-model="password">
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-xs-12">
+              <button ng-click="login()" type="submit" class="btn btn-default btn-lg btn-block"> <i class="fa fa-paw fa-2" aria-hidden="true"></i> Login</button>
+            </div>
+          </div>
+          <div class="row" style="margin-top:2%;">
+            <div class="col-xs-12">
+              <button ng-click="register()" type="submit" class="btn btn-default btn-block btn-clear">or create an account</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

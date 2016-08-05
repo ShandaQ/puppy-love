@@ -1,0 +1,32 @@
+<div class="container" href="#/register" style="margin-top: -6%;">
+<div class="row">
+  <div class="col-xs-12">
+    <form style="margin-top: -14%;">
+      <p>{{errorMessage}}</p>
+      <div class="form-group">
+        <label>Uername</label>
+        <input type="text" class="form-control" placeholder="username" ng-model="username">
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" class="form-control" id="email" placeholder="rock@gmail.com" ng-model="email">
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Password" ng-model="password">
+      </div>
+      <div class="form-group">
+        <label>Location(Zip)</label>
+        <input type="number" class="form-control" id="location" placeholder="19132" ng-model="location">
+      </div>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-xs-12">
+            <button ng-click="login()" type="submit" class="btn btn-default btn-lg btn-block"> <i class="fa fa-paw fa-2" aria-hidden="true"></i> Login</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>

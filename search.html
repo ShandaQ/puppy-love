@@ -1,0 +1,20 @@
+<div class="container" href="#/search" style="display:block; overflow:scroll;">
+  <a ng-repeat="pup in pups" href="#/pupfile/{{pup.id}}">
+    <div style="margin-top:15%;">
+      <h4 style="text-align: center;">{{pup.name}}</h4>
+      <div class="row">
+        <div class = "col-xs-4">
+          <div class = "thumbnail">
+             <img src = "img/cool.jpg" alt = "Generic placeholder thumbnail">
+          </div>
+        </div>
+        <div class="col-xs-8" style="margin-top: 5%;">
+          <!-- <div class = "caption"> -->
+            <p>Age: {{pup.age}}</p>
+            <p>Gender: {{pup.gender}}</p>
+            <p>Breed: {{pup.breed}}</p>
+          </div>
+      </div>
+    </div>
+  </a>
+</div>

@@ -1,0 +1,21 @@
+<div class="container" href="#/pupfile">
+  <div class="row" style="margin-top:2%;">
+    <div class="col-xs-5">
+      <div class="thumbnail">
+        <img src="img/80deg.jpg" alt="...">
+      </div>
+    </div>
+    <div class="caption col-xs-7">
+      <p> Pupfile Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+    </div>
+  </div>
+  <ul class="list-group">
+    <li class="list-group-item">Name: {{data.name}}</li>
+    <li class="list-group-item">Age: {{data.age}}</li>
+    <li class="list-group-item">Gender: {{data.gender}}</li>
+    <li class="list-group-item">Breed: {{data.breed}}</li>
+    <li class="list-group-item"><a href="#/profile/{{data.owner_id}}">
+      Parent: {{data.username}}</a>
+    </li>
+  </ul>
+</div>
