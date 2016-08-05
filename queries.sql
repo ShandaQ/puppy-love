@@ -4,23 +4,23 @@ create table owner (
   pswd varchar not null,
   email varchar not null,
   location_zip varchar not null
-)
+);
 
 create table pups (
   id serial primary key,
   name varchar not null,
-  age number not null,
+  age integer not null,
   breed varchar not null,
   litters varchar,
   gender char not null,
   owner_id integer references owner (id)
-)
+);
 
 create table loveConnection (
   id serial primary key,
-  f_pup_id varchar references pup (id),
-  m_pup varchar references pup (id)
-)
+  f_pup_id varchar references pups (id),
+  m_pup varchar references pups (id)
+);
 
 INSERT INTO owner VALUES
   (DEFAULT,'shandaq', 'test1', 'shandaq@gmail.com', '30341');
