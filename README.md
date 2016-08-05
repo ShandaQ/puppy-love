@@ -10,4 +10,4 @@ Frontend Technology: HTML, CSS, JavaScript, Angular
 
 Backend Technology: Express, Node.JS, PostgreSQL
 
-![alt tag](//github.com/ShandaQ/puppy-love/img/IMG_2201.png)
+![alt text](img/IMG_2201.png "Description goes here")
