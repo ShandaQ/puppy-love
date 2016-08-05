@@ -119,6 +119,7 @@ app.controller('searchController', function($scope, $http, $location){
   $http.get(API+'/listpuppies')
     .success(function(data){
       $scope.pups = data.data;
+      console.log('search data',data);
     });
 });
 

@@ -1,4 +1,13 @@
 <div class="container" href="#/search" style="display:block; overflow:scroll;">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav ">
+        <li class="col-xs-4" style="text-align:center;"><a href="#/profile/{{data.owner_id}}"><i class="fa fa-home fa-4" aria-hidden="true"> Profile</i></a></li>
+        <li class="col-xs-4" style="text-align:center;"><a href="#/search"><i class="fa fa-search fa-4" aria-hidden="true"> Search</i></a></li>
+        <li class="col-xs-4" style="text-align:center;"><a href="#/"><i class="fa fa-sign-out fa-4" aria-hidden="true"> Logout</i></a></li>
+      </ul>
+    </div>
+  </nav>
   <a ng-repeat="pup in pups" href="#/pupfile/{{pup.id}}">
     <div style="margin-top:15%;">
       <h4 style="text-align: center;">{{pup.name}}</h4>
@@ -17,4 +26,5 @@
       </div>
     </div>
   </a>
+
 </div>
