@@ -1,6 +1,6 @@
 var app = angular.module('app', ['ngRoute', 'ngCookies']);
 
-var API = 'http://localhost:5000';
+var API = 'https://puppylovebackend-pnsqkugyke.now.sh';
 
 
 app.config(function($routeProvider){

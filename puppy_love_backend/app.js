@@ -6,13 +6,18 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var cors = require('cors');
 
-var bcrypt = require('bcrypt');
+var bcrypt = require('my-bcrypt');
 var randToken = require('rand-token');
 
 var pg = require('pg');
-var connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/puppy_love';
-
-var client = new pg.Client(connectionString);
+var client = new pg.Client({
+    user: "dhvddhjrmenjzn",
+    password: "Bj7BnGj_oyIrqk-twO29ZeaJok",
+    database: "d28ae5g8pp6c51",
+    port: 5432,
+    host: "ec2-54-235-86-129.compute-1.amazonaws.com",
+    ssl: true
+});
 client.connect();
 
 var app = express();
