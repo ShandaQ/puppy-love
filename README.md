@@ -1,7 +1,6 @@
 # puppy-love
 
-
-[a link](puppylove-sqk.surge.sh)
+[PuppyLove](puppylove-sqk.surge.sh)
 
 This mobile app is intented to help parents with children of 4 legs find the right mate. PuppyLove will help make this easy. 
 User is able to create an account and add thier furry loves ones. 
