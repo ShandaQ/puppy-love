@@ -67,14 +67,20 @@ app.controller('MainController', function($scope, $http, $location, $cookies){
 
 
 app.controller('profileController', function($scope, $routeParams, $http, $location, $cookies){
+  $scope.refresh = function(){
+    $http.get(API+'/profile/'+$routeParams.id)
+      .success(function(data){
+        console.log(data);
+        $scope.data = data.results;
 
-  $http.get(API+'/profile/'+$routeParams.id)
-    .success(function(data){
-      console.log(data);
-      $scope.data = data.results;
+        console.log(data.results[0].username);
+        console.log($cookies.get('username'));
+        $scope.hideAddPetBtn = data.results[0].username !== $cookies.get('username');
+        console.log($scope.hideAddPetBtn);
+      });
+  };
 
-      $scope.hideAddPetBtn = data.results[0].username == $cookies.get('username');
-    });
+  $scope.refresh();
 
     $scope.add =function(){
       var credentials = {
@@ -94,6 +100,7 @@ app.controller('profileController', function($scope, $routeParams, $http, $locat
 
       $http.post(API+'/addpet', credentials)
         .success(function(data){
+          $scope.refresh();
         });
     };
 
